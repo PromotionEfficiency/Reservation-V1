@@ -1,0 +1,44 @@
+@font-face {
+ src:url(fonts/Montserrat-SemiBold_0.tff);
+ font-family: mont;
+
+}
+
+html {
+
+{
+  margin: 0;
+  padding: 0;
+}
+
+.information {
+  font-family: mont;
+}
+ .wrapper {
+   margin: 0 auto;
+   width: 1000px;
+ }
+
+
+  .img-logo {
+    width: 300px;
+  }
+
+/* .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+}*/
+
+
+}
