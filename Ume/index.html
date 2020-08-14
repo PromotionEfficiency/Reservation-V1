@@ -1,174 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Efficiency Center - Your efficiency work place @ Khobar</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Promotion Efficiency</title>
-    <link rel="stylesheet" herf="style.css">
-    <script src="vue.js"></script>
-  <!--  <img class="img-bb" src="https://j.top4top.io/p_167197swr1.png" alt="back ground"> -->
+      <!-- Bootstrap CSS -->
+      <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="center">
+      <div class="wrapper">
+        <img class="img-logo" src="img/logO22.png" alt="E Center" />
+      </div>
+      <div class="container">
+        <h1> .. سارع بالحجز معنا ..</h1>
+        <h3>Rent Start From <strong style="color:#9ACD32;">NOVEMBER 2020</strong></h3>
+        <h4>Contact us for more information</h4>
+        <p>Number: 920035115  Ext: 1</p>
+      </div>
 
+      <div class="container">
+        <form action="https://usebasin.com/f/79d26f1ce597" method="POST">
 
-<style>
-body {
-  background-image: url("https://g.top4top.io/p_1671ef33e1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+          <div class="row">
+              <input type="text" id="ClientName" name="ClientName" placeholder="Your good name" />
+          </div>
 
+          <div class="row">
+              <input type="tel" id="phone" name="phone" placeholder="+966555555555" />
+          </div>
 
-}
+          <div class="row">
+              <input type="email" id="email" name="email" placeholder="your@email.com" />
+          </div>
 
+          <div class="row">
+              <input type="text" id="company" name="company" placeholder="Company Name" />
+          </div>
 
+          <div class="row">
+              <input type="text" id="offLoc" name="officeLocation" placeholder="Your location.." />
+          </div>
 
-.center {
-  text-align: center;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+          <div class="row">
+              <textarea id="clname" name="clientNames" placeholder="Write Names of your primary current clients.." rows="5"></textarea>
+          </div>
 
-* {
-  box-sizin: border-box  ;
-}
+          <div class="row">
+              <div>Please upload your company profile below</div>
+              <div><input type="file" id="copro" name="profile" accept="pdf/*" /></div>
 
-input[type=text], select, textarea {
-  width: 70%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-  margin-left: 0px;
+          </div>
 
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-  margin-left: 90px;
-
-}
-
-input[type=submit] {
-  background-color: #808080;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float:right;
-}
-
-input[type=submit]:hover {
-  background-color: #9ACD32;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: white;
-  padding: 10px;
-  margin-left: 200px;
-  margin-right: 200px;
-
-
-}
-
-.col-25 {
-  float: left;
-  width: 8%;
-  margin-top: 6px;
-  margin-left: 150px;
-
-}
-
-.col-75 {
-  float: left;
-  width: 55%;
-  margin-top: 6px;
-  margin-left: 150px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-</style>
-</head>
-
-
-<body>
- <div class="center">
-
-
-  <div class="wrapper">
-    <img class="img-logo" src="img/logO22.png" alt="E Center" style="width:30%"> </div>
-    <!--  <img class="img-bb" src="img/BG1.png" alt="back ground"> </div> -->
-
-    <p class="information">
-  <div class="container">
-
-  <h1> .. سارع بالحجز معنا ..</h1>
-
-  <h3>Rent Start From <strong style="color:#9ACD32;">NOVEMBER 2020 </strong> </h3>
-  <h4>Contact us for more information</h4>
-  <p>Number: 920035115  Ext: 1</p>
-</div>
-<br>
-</p>
-
-  <div class="container">
-    <form action="/action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <form action="/action_page.php">
-         <label for="copro">Company Profile</label>
-
-       </div>
-       <div class="col-75">
-           <input type="file" id="copro" name="profile" accept="pdf/*">
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
       </div>
     </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="offLoc">Current Office Location</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="offLoc" name="officeLocation" placeholder="Your location..">
-      </div>
-    </div>
-    <div class="row">
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="clname">Renowned Clients</label>
-      </div>
-      <div class="col-75">
-        <textarea id="clname" name="clientNames" placeholder="Write Names.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <div class="row">
-
-      <input type="submit" value="Submit">
-    </div>
-    </form>
-  </div>
-
-</body>
 
 
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
 </html>
