@@ -1,20 +1,15 @@
 @font-face {
- src:url(fonts/Montserrat-SemiBold_0.otf);
- font-family: mont;
+    font-family: GESS;
+    src: url("assets/fonts/GE_SS_Two_Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: GESS_LITE;
+    src: url("assets/fonts/GE-SS-TV-Light_10.otf") format("opentype");
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  font-family: mont;
-}
-
-.wrapper {
- margin: 0 auto;
-}
-
-.img-logo {
-
+@font-face {
+    font-family: GESS_2_LITE;
+    src: url("assets/fonts/GE-SS-Two-Light_28.otf") format("opentype");
 }
 
 body {
@@ -23,91 +18,16 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
-
+  font-family: 'Montserrat', 'GESS_2_LITE', arial;
 }
 
-.center {
-  text-align: center;
+.ar-rounded-boxes{
+  border-radius: 25px;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-* {
-  box-sizin: border-box  ;
-}
+#logo{
 
-input[type=text], input[type=tel], input[type=email], input[type=file], select, textarea {
-  width: 70%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-  margin-left: 0px;
-  margin-bottom:12px;
-
-}
-
-input[type=file]{
-  margin-top:12px;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #808080;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width:100%;
-  margin:20px 0 10px;
-}
-
-input[type=submit]:hover {
-  background-color: #9ACD32;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: white;
-  padding: 10px;
-  margin: 0 auto 20px;
-  width:800px;
-}
-
-.col-25 {
-  float: left;
-  width: 40%;
-  margin-top: 6px;
-  text-align:right;
-
-}
-
-.col-75 {
-  float: left;
-  width: 60%;
-  margin-top: 6px;
-  text-align:left;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
+  width: 20vw;
+  min-width: 150px;
 }
