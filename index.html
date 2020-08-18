@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Efficiency Center - Your efficiency work place @ Khobar</title>
-    <meta name="description" content="Salam 3likom, No description now">
-    <meta name="author" content="Promotion Efficiency,">
+    <title>Efficiency Center - Your Hike to PEAK</title>
+    <meta name="description" content="">
+    <meta name="author" content="Business Incubator & Accelerator at Al-Khobar">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -14,12 +14,22 @@
 
     <!--- Browser Icon-->
     <!--- Browser Icon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body class="bg-light">
@@ -31,7 +41,7 @@
         <div class="card ar-rounded-boxes">
           <div class="card-body">
             <h2>!إحجز مساحتك الآن</h2>
-            <p class="">مساحات عمل عصرية ومجهّزة بالكامل مع إطلالة على كورنيش الخبر</p>
+            <p class="">مساحات عمل عصرية ومجهّزة بالكامل مع إطلالة على الخليج العربي و طريق الأمير تركي</p>
           </div>
         </div>
 
@@ -86,12 +96,40 @@
                   <input type="text" class="form-control" id="officeAddress" name="officeAddress" placeholder="" value="">
                 </div>
 
-                <div class="mb-3"><!-- customers -->
-                  <label for="currentCustomers">Your primary current customers <span class="text-muted">(Optional)</span><br /><small>Please list examples (3 at least) of your current customers names only</small></label>
-
-                  <textarea class="form-control" id="currentCustomers" name="currentCustomers" rows="5"></textarea>
+                <div class="row"> <!-- office type -->
+                  <div class="col-md-12 mb-3">
+                    <label for="officeType">Office Type*</label>
+                    <select class="custom-select d-block w-100" id="officeType" name="officeType">
+                      <option value="">Choose...</option>
+                      <option value="2">Open-space Cubicle - Shared</option>
+                      <option value="4">Open-space Cubicle - Fixed</option>
+                      <option value="1">Single Office</option>
+                      <option value="3">Group Office</option>
+                      <option value="5">Other</option>
+                    </select> <br>
+                    <span class="text-muted">If your answer is other then write your request</span><br/>
+                    <input type="text" class="form-control" id="other" name="other" placeholder="" value="">
+                  </div>
                 </div>
 
+
+                <div class="mb-3"><!-- customers -->
+                  <label for="currentCustomers">Your primary current customers <span class="text-muted">(Optional)</span><br /><small>Please list examples of your current customers names only</small></label>
+
+                  <div class="form-row" >
+                    <div class="col-4">
+                      <input type="text" class="form-control" placeholder="First Client Name">
+                    </div>
+                    <div class="col-4">
+                      <input type="text" class="form-control" placeholder="Second Client Name">
+                    </div>
+                    <div class="col-4">
+                      <input type="text" class="form-control" placeholder="Third Client Name">
+                    </div>
+                   </div>
+                  </div>
+                <form>
+                          
                 <!-- company CR -->
                 <div class="mb-1">
                   <small>Please upload a copy of your commercial registeration license</small>
@@ -111,20 +149,6 @@
                   <label class="custom-file-label" for="companyProfile">Choose file...</label>
                 </div>
 
-                <div class="row">
-                  <div class="col-md-12 mb-3">
-                    <label for="officeType">Office Type</label>
-                    <select class="custom-select d-block w-100" id="officeType" name="officeType">
-                      <option value="">Choose...</option>
-                      <option value="1">Single Office</option>
-                      <option value="2">Shared Office</option>
-                      <option value="3">Group Office</option>
-                      <option value="4">Custom Office</option>
-                      <option value="5">Other</option>
-                    </select>
-                  </div>
-                </div>
-
                 <hr class="mb-4">
                 <button class="btn btn-block col btn-lg btn-block" type="submit">Send</button>
               </form>
@@ -139,7 +163,8 @@
         <p class="mb-1">&copy; 2020 Efficiency Center</p>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="#">Terms</a></li>
-          <li class="list-inline-item"><a href="#">Follow on Twitter</a></li>
+          <li class="list-inline-item"><a href="https://instagram.com/efficiencycenter?igshid=1ksvqjanhfug4">Instagram</a></li>
+          <li class="list-inline-item"><a href="https://twitter.com/Efficiency_c?s=21">Twitter</a></li>
         </ul>
       </footer>
     </div>
