@@ -13,24 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <!--- Browser Icon-->
-    <!--- Browser Icon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicons/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Font Awsome Code -->
+    <script src="https://kit.fontawesome.com/4fdf44cc37.js" crossorigin="anonymous"></script>
   </head>
   <body class="bg-light">
     <div class="container">
@@ -128,8 +123,7 @@
                     </div>
                    </div>
                   </div>
-                <form>
-                          
+
                 <!-- company CR -->
                 <div class="mb-1">
                   <small>Please upload a copy of your commercial registeration license</small>
@@ -150,10 +144,13 @@
                 </div>
 
                 <hr class="mb-4">
-                <button class="btn btn-block col btn-lg btn-block" type="submit">Send</button>
+                <button class="btn btn-success btn-lg btn-block" type="submit">Send</button>
               </form>
             </div>
           </div>
+
+          <div id="map" class="mt-5">
+          <h1>Large Google Maps</h1></div>
         </div>
       </div>
 
@@ -163,8 +160,8 @@
         <p class="mb-1">&copy; 2020 Efficiency Center</p>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="#">Terms</a></li>
-          <li class="list-inline-item"><a href="https://instagram.com/efficiencycenter?igshid=1ksvqjanhfug4">Instagram</a></li>
-          <li class="list-inline-item"><a href="https://twitter.com/Efficiency_c?s=21">Twitter</a></li>
+          <li class="list-inline-item"><a href="https://instagram.com/efficiencycenter?igshid=1ksvqjanhfug4"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li class="list-inline-item"><a href="https://twitter.com/Efficiency_c?s=21"><i class="fab fa-twitter"></i> Twitter</a></li>
         </ul>
       </footer>
     </div>
@@ -175,13 +172,39 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="assets/js/bs-custom-file-input.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbTdvo4__slcBOPNrsjYLpeAzcT1Gij2E&callback=initMap"type="text/javascript"></script>
+
     <script>
-    /*
+
+
+
+    /* Google Maps Section */
+    function initMap() {
+      var myLatLng = {lat: 26.307597, lng: 50.224249};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        clickableIcons: false,
+        disableDefaultUI: true,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'Efficiency Center!'
+      });
+    }
+
+
+
+
+
     $(document).ready(function () {
       bsCustomFileInput.init()
     })
 
-
+/*
       $(function() {
         // Get the form.
         var form = $('#contact-form');

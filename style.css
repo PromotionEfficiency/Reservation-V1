@@ -25,15 +25,18 @@ body {
   border-radius: 25px;
 }
 
-.col  {
+.btn-success  {
   background-color:#9ACD32;
-  color: white;   
+  color: white;
+  border-color: transparent;
 }
 
-
-
 #logo{
-
   width: 20vw;
   min-width: 150px;
+}
+
+#map{
+  width:100%;
+  height:400px;
 }
