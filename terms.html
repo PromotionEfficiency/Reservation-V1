@@ -31,135 +31,48 @@
     <div class="container">
       <div class="pt-5 pb-3 text-center">
         <a href="index.html"><img class="d-block mx-auto mb-4" id="logo" src="assets/img/logo-light-bg-darker.png" alt="" ></a>
-
-        <div class="card ar-rounded-boxes alert alert-warning" style="margin-top:50vh;">
-          <div class="card-body">
-            <h2>Book your space now!</h2>
-            <p class="">Luxurious, fully-equipped modern workspaces for you and your team, <br />in the <i class="fas fa-heart" style="color:red;"></i> of Khobar, with views of the Arabian Gulf and Prince Turki Road</p>
-            <div class="text-center mt-3">
-              <a dir="rtl" class="btn btn-warning btn-sm" href="assets/files/EfficiencyCenter-Ar.pdf" role="button">تحميل <i class="fas fa-cloud-download-alt"></i></a>
-              <a class="btn btn-warning btn-sm" href="assets/files/EfficiencyCenter-En.pdf" role="button">Download <i class="fas fa-cloud-download-alt"></i></a>
-              <br />
-              <small>Download our brochure and read more about services</small>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4 alert alert-info alert-dismissible fade show" role="alert">
-           Rent Start From <strong>NOVEMBER 2020!</strong>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
       </div>
 
-      <div class="alert alert-success ar-rounded-boxes d-none" id="success-msg" role="alert">
-        Your information has been recieved successfully.
-      </div>
-
-      <div class="alert alert-danger ar-rounded-boxes d-none" id="error-msg" role="alert">
-        Something went wrong, please verify your information below and try again.
-      </div>
 
       <div class="card ar-rounded-boxes" id="form-id">
         <div class="card-body">
           <div class="row">
-            <div class="col-md-12 order-md-1">
-              <form action="https://formsubmit.co/mohannad.otaibi@gmail.com" method="POST" id="contact-form" enctype="multipart/form-data" class="needs-validation" novalidate>
-                <div class="row"><!-- name -->
-                  <div class="col-md-12 mb-3">
-                    <label for="fullName">Full name</label>
-                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="" value="" required>
-                    <div class="invalid-feedback">Your name is required.</div>
-                  </div>
-                </div>
-                <input type="hidden" name="_url" value="https://efficiencys.com.sa/contact.html">
-                <input type="hidden" name="_next" value="https://efficiencys.com.sa/contact/thanks.html">
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
-                <div class="mb-3"><!-- phone -->
-                  <label for="phoneNumber">Your phone number</label>
-                  <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="" value="" required>
-                  <div class="invalid-feedback">Phone number is also required.</div>
-                </div>
+            <div class="col-12">
+              <div class="alert alert-danger" role="alert">
+                By using our services, you agree to the following terms and conditions
+              </div>
 
-                <div class="mb-3"><!-- email -->
-                  <label for="email">Your email</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="" value="" required>
-                  <div class="invalid-feedback">Email addres is required.</div>
-                </div>
-
-                <div class="mb-3"><!-- company name -->
-                  <label for="companyName">Company Name</label>
-                  <input type="text" class="form-control" id="companyName" name="companyName" placeholder="" value="">
-                </div>
-
-                <div class="mb-3"><!-- office address -->
-                  <label for="officeAddress">Current Office Addres</label>
-                  <input type="text" class="form-control" id="officeAddress" name="officeAddress" placeholder="" value="">
-                </div>
-
-                <div class="row"> <!-- office type -->
-                  <div class="col-md-12 mb-3">
-                    <label for="officeType">Office Type*</label>
-                    <select class="custom-select d-block w-100" id="officeType" name="officeType">
-                      <option value="">Choose...</option>
-                      <option value="2">Open-space Cubicle - Shared</option>
-                      <option value="4">Open-space Cubicle - Fixed</option>
-                      <option value="1">Single Office</option>
-                      <option value="3">Group Office</option>
-                      <option value="5">Other</option>
-                    </select> <br>
-                    <span class="text-muted">If your answer is <b>"other"</b>, then, write your wish</span><br/>
-                    <input type="text" class="form-control" id="other" name="other" placeholder="" value="">
-                  </div>
-                </div>
-
-
-                <div class="mb-3"><!-- customers -->
-                  <label for="currentCustomers">Your primary current customers <span class="text-muted">(Optional)</span><br /><small>Please list examples of your current customers' names only</small></label>
-
-                  <div class="form-row" >
-                    <div class="col-md-4 mb-2 mb-md-0">
-                      <input type="text" class="form-control" placeholder="First Client Name">
-                    </div>
-                    <div class="col-md-4 mb-2 mb-md-0">
-                      <input type="text" class="form-control" placeholder="Second Client Name">
-                    </div>
-                    <div class="col-md-4 mb-2 mb-md-0">
-                      <input type="text" class="form-control" placeholder="Third Client Name">
-                    </div>
-                   </div>
-                  </div>
-
-                <!-- company CR -->
-                <div class="mb-1">
-                  <small>Please upload a copy of your commercial registeration license</small>
-                </div>
-                <div class="custom-file mb-3">
-                  <input type="file" class="custom-file-input" id="companyCR" name="companyCR"></input>
-                  <label class="custom-file-label" for="companyCR">Choose file...</label>
-                </div>
-
-                <!-- company profile -->
-                <div class="mb-1">
-                  <small>Please upload a copy of your company profile</small>
-                </div>
-                <div class="custom-file mb-3">
-
-                  <input type="file" class="custom-file-input" id="companyProfile" name="companyProfile"></input>
-                  <label class="custom-file-label" for="companyProfile">Choose file...</label>
-                </div>
-
-                <hr class="mb-4">
-                <button class="btn btn-success btn-lg btn-block" type="submit">Send</button>
-              </form>
+              <h2>ELIGIBILITY</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <hr />
             </div>
-          </div>
-
-          <div id="map" class="mt-5">
-            <h1>Large Google Maps</h1>
+            <div class="col-12">
+              <h2>ELIGIBILITY</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <hr />
+            </div>
+            <div class="col-12">
+              <h2>ELIGIBILITY</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <hr />
+            </div>
+            <div class="col-12">
+              <h2>ELIGIBILITY</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <hr />
+            </div>
           </div>
         </div>
       </div>
