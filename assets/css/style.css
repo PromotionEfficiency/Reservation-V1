@@ -1,20 +1,20 @@
 @font-face {
     font-family: GESS;
-    src: url("/assets/fonts/GE_SS_Two_Bold.otf") format("opentype");
+    src: url("assets/fonts/GE_SS_Two_Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: GESS_LITE;
-    src: url("/assets/fonts/GE-SS-TV-Light_10.otf") format("opentype");
+    src: url("assets/fonts/GE-SS-TV-Light_10.otf") format("opentype");
 }
 
 @font-face {
     font-family: GESS_2_LITE;
-    src: url("/assets/fonts/GE-SS-Two-Light_28.otf") format("opentype");
+    src: url("assets/fonts/GE-SS-Two-Light_28.otf") format("opentype");
 }
 
 body {
-  background-image: linear-gradient(141deg, rgba(195,209,121,0.6) 0%, rgba(210,255,127,0.6) 75%), url("/assets/img/1576998896p-bufai7an-edits-1920-v2.jpg") ;
+  background-image: linear-gradient(141deg, rgba(201, 207, 168, 0.699) 0%, rgba(236, 255, 199, 0.726) 75%), url("./assets/img/1576998896p-bufai7an-edits-1920-v2.jpg") ;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -23,7 +23,7 @@ body {
 }
 
 body.thankyou {
-  background-image: linear-gradient(141deg, rgba(195,209,121,0.6) 0%, rgba(210,255,127,0.6) 75%), url("/assets/img/thankyou-bg.jpg") ;
+  background-image: linear-gradient(141deg, rgba(199, 207, 157, 0.6) 0%, rgba(236, 255, 199, 0.6) 75%), url("./assets/img/thankyou-bg.jpg") ;
 }
 
 body.thankyou .card{
@@ -57,5 +57,5 @@ body.thankyou .card{
 }
 
 footer{
-  background-color: rgba(0, 0, 0, 0.8);:
+  background-color: rgba(0, 0, 0, 0.8);
 }
